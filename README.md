@@ -1,6 +1,36 @@
 # Amazon-Sentiment-Analysis
 This project performs Sentiment Analysis on Amazon reviews using Natural Language Processing (NLP) and Deep Learning techniques. A LSTM-based model is trained to classify reviews as positive or negative.
 
+📥 Downloading the Dataset from Kaggle
+
+If you are unable to manually upload datasets, you can automatically download the latest version of the Amazon Reviews Dataset from Kaggle using the kagglehub library.
+How to Download the Dataset
+
+1️⃣ Install kagglehub if you haven't already:
+
+pip install kagglehub
+
+2️⃣ Run the following script to download the dataset:
+
+import kagglehub
+
+# Download the latest version of the dataset
+path = kagglehub.dataset_download("bittlingmayer/amazonreviews")
+
+print("Path to dataset files:", path)
+
+3️⃣ Once the download is complete, the dataset files will be saved in the directory specified by path. You can now use them in your project.
+Important Notes:
+
+    Ensure you have access to the Kaggle API.
+
+    You may need to authenticate using your Kaggle API token.
+
+    If you encounter any issues, try running kagglehub.authenticate() before downloading.
+
+This method ensures that you always get the latest dataset directly from Kaggle without needing manual uploads. 🚀
+
+
 🛠 Model Performance
 
 Precision, Recall, F1-Score, and Accuracy:
